@@ -49,7 +49,7 @@ A locally-running AI tool that answers questions about your study materials — 
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/study-assistant.git
+git clone https://github.com/nayalambaliya/study-assistant.git
 cd study-assistant
 
 # 2. Create a virtual environment
