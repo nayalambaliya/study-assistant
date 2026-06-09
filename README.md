@@ -81,13 +81,12 @@ Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ## Screenshots
 
-<!-- Add screenshots after running the app -->
+![demo](screenshots/demo.png)
 
 ---
 
 ## Future improvements
 
-- [ ] Support for multiple file uploads at once
-- [ ] Chat history / follow-up questions
 - [ ] Model switcher (choose between different Ollama models)
-- [ ] Export answers to a text file
+- [ ] Persistent chat history saved to disk
+- [ ] Support for `.docx` and `.pptx` files
