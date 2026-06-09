@@ -128,5 +128,17 @@ if st.session_state.context:
                 except Exception as e:
                     st.error(f"Something went wrong: {e}")
 
+    if st.session_state.messages:
+        chat_export = "\n\n".join(
+            f"{'You' if m['role'] == 'user' else 'Assistant'}: {m['content']}"
+            for m in st.session_state.messages
+        )
+        st.download_button(
+            label="Export chat as .txt",
+            data=chat_export,
+            file_name="chat_history.txt",
+            mime="text/plain",
+        )
+
     with st.expander("See extracted source text"):
         st.text(st.session_state.context[:12000])
